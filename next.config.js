@@ -1,14 +1,28 @@
 const path = require("path");
-const withPlugins = require("next-compose-plugins");
 const withImages = require("next-images");
+const withPlugins = require("next-compose-plugins");
 
-module.exports = {
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+const nextConfig = {
+  trailingSlash: false,
+  poweredByHeader: false,
+  webpack(config, options) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@components": path.resolve("./components"),
+      "@public": path.resolve("./public"),
+      "@redux": path.resolve("./redux"),
+    };
     config.module.rules.push({
-      test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-      loader: require.resolve("url-loader"),
+      test: /\.(png|jpe?g|gif|svg)$/i,
+      loader: "file-loader",
+      options: {
+        outputPath: "../public/",
+        publicPath: "/",
+      },
     });
 
     return config;
   },
 };
+
+module.exports = nextConfig;
