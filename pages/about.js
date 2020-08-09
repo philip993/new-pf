@@ -13,7 +13,7 @@ const About = () => (
       <section>
         <Avatar
           className={styles.avatar}
-          src={require("../public/pf.png")}
+          src={require("../public/d3c858d33b61f408fb1f06438dba433f")}
           alt='profie'
         />
         <span>
