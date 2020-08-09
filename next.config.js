@@ -13,12 +13,8 @@ const nextConfig = {
       "@redux": path.resolve("./redux"),
     };
     config.module.rules.push({
-      test: /\.(png|jpe?g|gif|svg)$/i,
-      loader: "file-loader",
-      options: {
-        outputPath: "../public/",
-        publicPath: "assets/",
-      },
+      test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+      loader: require.resolve("url-loader"),
     });
 
     return config;
