@@ -11,11 +11,7 @@ const About = () => (
     </header>
     <div className={styles.body}>
       <section>
-        <Avatar
-          className={styles.avatar}
-          src={require("../public/d3c858d33b61f408fb1f06438dba433f")}
-          alt='profie'
-        />
+        <Avatar className={styles.avatar} alt='profie' />
         <span>
           <h2>BIO</h2>
           <p>

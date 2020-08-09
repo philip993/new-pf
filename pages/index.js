@@ -7,10 +7,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Index = () => (
   <div className={styles.index}>
-    <img
-      src={require("../public/6200c4b2bce5de1699aeeb2bbdbb5704")}
-      alt='background'
-    />
+    <img alt='background' />
     <Layout>
       <div className={styles.indexMenu}>
         <h1>FILIP MIHAJLOVSKI</h1>
