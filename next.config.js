@@ -12,7 +12,7 @@ const nextConfig = {
       "@public": path.resolve("./public"),
       "@redux": path.resolve("./redux"),
     };
-    config.rules.push({
+    config.module.rules.push({
       test: /\.(png|jpe?g|gif|svg)$/i,
       loader: "file-loader",
       options: {
