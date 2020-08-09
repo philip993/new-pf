@@ -1,0 +1,110 @@
+.cv {
+  margin: auto;
+  width: 80%;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+
+  span {
+    float: left;
+    margin: auto;
+    width: 50%;
+    min-height: 200px;
+    margin-top: 20px;
+  }
+  .spanRight {
+    text-align: right;
+
+    .street {
+      font-size: 1rem;
+      margin-top: 10px;
+      padding-top: 15px;
+    }
+    .city {
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+
+    .number {
+      color: orange;
+      margin-top: 20px;
+    }
+
+    .mail {
+      color: orange;
+      margin-top: -15px;
+    }
+  }
+  .spanLeft {
+    text-align: left;
+    h4 {
+      color: orange;
+      font-size: 1.5rem;
+      margin-top: -10px;
+    }
+  }
+}
+
+.body {
+  width: 100%;
+  section {
+    float: left;
+    border-top: 1px solid #b3b3b3;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .department {
+    margin-top: -10px;
+    font-weight: normal;
+  }
+
+  .duration {
+    font-weight: normal;
+    margin-top: -10px;
+    color: #777b7e;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .header {
+    .spanLeft,
+    .spanRight {
+      display: inline-block;
+      width: 100%;
+      min-height: 100px;
+      text-align: center;
+      h4 {
+        margin-top: -15px;
+      }
+
+      .street {
+        font-size: 1rem;
+        margin-top: -10px;
+        padding-top: 5px;
+      }
+      .city {
+        margin-top: -15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1240px) {
+  .cv {
+    margin: auto;
+    width: 55%;
+  }
+}
+
+@media all and (min-width: 1800px) {
+  .cv {
+    margin: auto;
+    width: 50%;
+  }
+}
