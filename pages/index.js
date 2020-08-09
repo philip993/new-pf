@@ -1,4 +1,4 @@
-// import Layout from '../components/Layout/Layout';
+import Layout from "../components/Layout/Layout";
 import styles from "../styles/index.module.scss";
 import { IconButton } from "@material-ui/core";
 import FacebookIcon from "@material-ui/icons/Facebook";
