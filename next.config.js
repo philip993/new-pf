@@ -12,6 +12,14 @@ const nextConfig = {
       "@public": path.resolve("./public"),
       "@redux": path.resolve("./redux"),
     };
+    config.rules.push({
+      test: /\.(png|jpe?g|gif|svg)$/i,
+      loader: "file-loader",
+      options: {
+        outputPath: "../public/",
+        publicPath: "assets/",
+      },
+    });
 
     return config;
   },
