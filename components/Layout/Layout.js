@@ -1,4 +1,4 @@
-import Navbar from "../Navbar/NavbarActions.js";
+import Navbar from "../Navbar/Navbar.js";
 
 const Layout = (props) => (
   <div>
