@@ -8,8 +8,9 @@ const nextConfig = {
   webpack(config, options) {
     config.resolve.alias = {
       ...config.resolve.alias,
-
+      "@components": path.resolve("./components"),
       "@public": path.resolve("./public"),
+      "@redux": path.resolve("./redux"),
     };
 
     return config;
